@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #284768;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+    background: none;
+    border:2px solid #cd4848;
+    font-size: 40px;
+    color:white;
+    padding:20px 40px;
+    width:250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-swap span{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 40px;
+    width:100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.btn-swap:hover span{
+    opacity: 1;
+}
+
+.btn-swap::before{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #cd4848;
+    transition: width 1s;
+}
+
+.btn-swap:hover::before{
+    width:100%;
+}
+
+
+.btn1{
+    background: none;
+    border:2px solid #7b48cd;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+    padding:20px 40px;
+    width:250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-swap1 span{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 40px;
+    width:100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.btn-swap1:hover span{
+    opacity: 1;
+}
+
+.btn-swap1::before{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #7b48cd;
+    transition: width 1s;
+}
+
+.btn-swap1:hover::before{
+    width:100%;
+}
+
+
+.btn2{
+    background: none;
+    border:2px solid #489ccd;
+    font-size: 40px;
+    color:white;
+    padding:20px 40px;
+    width:250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-swap2 span{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 40px;
+    width:100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.btn-swap2:hover span{
+    opacity: 1;
+}
+
+.btn-swap2::before{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #489ccd;
+    transition: width 1s;
+}
+
+.btn-swap2:hover::before{
+    width:100%;
+}
